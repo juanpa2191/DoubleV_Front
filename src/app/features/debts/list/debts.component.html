@@ -1,8 +1,8 @@
-
 <div class="debts-container">
   <h2>Listado de Deudas</h2>
   <div *ngIf="loading">Cargando...</div>
   <div *ngIf="error" class="error">{{ error }}</div>
+  <button routerLink="/debts/create" class="create-debt-btn">Crear nueva deuda</button>
   <table *ngIf="!loading && debts.length">
     <thead>
       <tr>

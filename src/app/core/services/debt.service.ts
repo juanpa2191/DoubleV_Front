@@ -19,4 +19,16 @@ export class DebtService {
 			});
 			return this.http.get<DebtsResponseModel[]>(this.apiUrl, { headers });
 		}
+
+	createDebt(payload: import('../models/debts.request.model').DebtsRequestModel): Observable<any> {
+		let token = '';
+		if (typeof window !== 'undefined' && window.localStorage) {
+			token = localStorage.getItem('access_token') || '';
+		}
+		const headers = new HttpHeaders({
+			'Authorization': token ? `Bearer ${token}` : '',
+			'Content-Type': 'application/json'
+		});
+		return this.http.post<any>(this.apiUrl, payload, { headers });
+	}
 }
