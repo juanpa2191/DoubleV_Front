@@ -38,8 +38,8 @@ export class LoginComponent {
     this.error = null;
     this.authService.login(this.loginForm.value).subscribe({
       next: (res) => {
-        // Aquí puedes manejar la respuesta, por ejemplo redirigir o mostrar datos
         this.loading = false;
+        this.router.navigate(['/debts']);
       },
       error: (err) => {
         this.error = 'Credenciales inválidas o error de red.';
