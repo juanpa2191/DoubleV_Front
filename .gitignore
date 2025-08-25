@@ -6,6 +6,8 @@
 /e2e/test-output/
 /.angular/
 .angular/
+.github/
+/.github/
 
 # Node modules and dependency files
 /node_modules/
