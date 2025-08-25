@@ -7,11 +7,15 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './features/auth/login/login.component';
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
+import { DebtsComponent } from './features/debts/list/debts.component';
+import { CreateDebtComponent } from './features/debts/create/create-debt.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DebtsComponent,
+    CreateDebtComponent
   ],
   imports: [
     BrowserModule,

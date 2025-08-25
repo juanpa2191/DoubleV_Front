@@ -1,9 +1,9 @@
-
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DebtService } from '../../../core/services/debt.service';
 import { DebtsResponseModel } from '../../../core/models/debts.response.model';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-debts',
@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class DebtsComponent {
   debtService = inject(DebtService);
+  router = inject(Router);
   debts: DebtsResponseModel[] = [];
   loading = false;
   error: string | null = null;
@@ -77,5 +78,9 @@ export class DebtsComponent {
   // Actualizar paginación al cambiar filtros
   ngOnChanges() {
     this.updateTotalPages();
+  }
+
+  goToCreateDebt() {
+    this.router.navigate(['/debts/create']);
   }
 }
