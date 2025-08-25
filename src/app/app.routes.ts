@@ -1,8 +1,11 @@
 
 
+
 import { LoginComponent } from './features/auth/login/login.component';
 import { Route } from '@angular/router';
+import { RegisterComponent } from './features/auth/register/register.component';
 
 export const routes: Route[] = [
-	{ path: 'login', component: LoginComponent }
+	{ path: 'login', component: LoginComponent },
+	{ path: 'register', component: RegisterComponent }
 ];
