@@ -1,8 +1,8 @@
 
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DebtService } from '../../core/services/debt.service';
-import { DebtsResponseModel } from '../../core/models/debts.response.model';
+import { DebtService } from '../../../core/services/debt.service';
+import { DebtsResponseModel } from '../../../core/models/debts.response.model';
 import { FormsModule } from '@angular/forms';
 
 @Component({

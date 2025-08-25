@@ -1,4 +1,4 @@
-import { DebtsComponent } from './features/debts/debts.component';
+import { DebtsComponent } from './features/debts/list/debts.component';
 
 
 
