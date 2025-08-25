@@ -1,3 +1,4 @@
+import { DebtsComponent } from './features/debts/debts.component';
 
 
 
@@ -7,5 +8,6 @@ import { RegisterComponent } from './features/auth/register/register.component';
 
 export const routes: Route[] = [
 	{ path: 'login', component: LoginComponent },
-	{ path: 'register', component: RegisterComponent }
+	{ path: 'register', component: RegisterComponent },
+	{ path: 'debts', component: DebtsComponent }
 ];

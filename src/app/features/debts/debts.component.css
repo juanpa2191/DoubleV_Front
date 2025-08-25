@@ -1,0 +1,30 @@
+.debts-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.debts-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+th {
+  background: #f5f5f5;
+}
+.error {
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 16px;
+}
